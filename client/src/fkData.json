@@ -1,0 +1,67 @@
+{
+  "loggedInUser": {
+    "name": "Pierre"
+  },
+  "projects": [
+    {
+      "title": "Music movie for Ukle",
+      "description": "I am realizing the movie for Ukle and need help :)",
+      "category": ["movie", "theatre"],
+      "state": "wip",
+      "tags": ["music", "movie"],
+      "author": "Alice",
+      "likes": 12,
+      "interests": 6
+    },
+    {
+      "title": "Feminist chat bot",
+      "description": "Just an idea for this one, As art project I would like tio create a chat bot that is not biased. I mostly need help for data collecting...",
+      "category": ["AI", "programming", "social"],
+      "state": "idea",
+      "tags": ["chatbot", "ai", "feminism"],
+      "author": "Pierre",
+      "likes": 6,
+      "interests": 10
+    },
+    {
+      "title": "Music movie for Ukle",
+      "description": "I am realizing the movie for Ukle and need help :)",
+      "category": ["movie", "theatre"],
+      "state": "wip",
+      "tags": ["music", "movie"],
+      "author": "Alice",
+      "likes": 12,
+      "interests": 6
+    },
+    {
+      "title": "Feminist chat bot",
+      "description": "Just an idea for this one, As art project I would like tio create a chat bot that is not biased. I mostly need help for data collecting...",
+      "category": ["AI", "programming", "social"],
+      "state": "idea",
+      "tags": ["chatbot", "ai", "feminism"],
+      "author": "Pierre",
+      "likes": 6,
+      "interests": 10
+    },
+    {
+      "title": "Music movie for Ukle",
+      "description": "I am realizing the movie for Ukle and need help :)",
+      "category": ["movie", "theatre"],
+      "state": "wip",
+      "tags": ["music", "movie"],
+      "author": "Alice",
+      "likes": 12,
+      "interests": 6
+    },
+    {
+      "title": "Feminist chat bot",
+      "description": "Just an idea for this one, As art project I would like tio create a chat bot that is not biased. I mostly need help for data collecting...",
+      "category": ["AI", "programming", "social"],
+      "state": "idea",
+      "tags": ["chatbot", "ai", "feminism"],
+      "author": "Pierre",
+      "likes": 6,
+      "interests": 10
+    }
+  ]
+}
