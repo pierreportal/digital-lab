@@ -5,9 +5,9 @@ import InterestButton from "./InterestButton";
 export default function ProjectListItem(props) {
   const { project, user } = props;
 
-  const categories = project.category.map((category) => (
-    <span key={category}>{category}</span>
-  ));
+  //   const categories = project.category.map((category) => (
+  //     <span key={category}>{category}</span>
+  //   ));
 
   const tags = project.tags.map((tag) => (
     <span className="tag-span" key={tag}>
@@ -23,7 +23,7 @@ export default function ProjectListItem(props) {
     return (
       <span
         style={{
-          "background-color": colorMap[project.state][0],
+          backgroundColor: colorMap[project.state][0],
           color: colorMap[project.state][1],
         }}
       >
@@ -39,15 +39,17 @@ export default function ProjectListItem(props) {
 
   return (
     <div className="project-list-item column ">
-      <div className="space-btw row center-line-align">
+      <div className=" row center-line-align">
+        <div className="row center-line-align">
+          <div className="project-list-item-author-pic"></div>
+          <span className="project-list-author-name">
+            {project.author === user.name ? "me" : project.author}
+          </span>
+        </div>
         <div className="row center-line-align">
           <h3>{project.title}</h3>
           {projectState()}
           {/* {categories} */}
-        </div>
-        <div className="row center-line-align">
-          <span>{project.author === user.name ? "me" : project.author}</span>
-          <div className="project-list-item-author-pic"></div>
         </div>
       </div>
 
