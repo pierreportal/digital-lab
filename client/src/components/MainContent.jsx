@@ -10,6 +10,7 @@ export default function MainContent(props) {
       <ProjectListItem key={project} project={project} user={props.user} />
     );
   });
+
   return (
     <div className="main column padded">
       <NewProjectForm />

@@ -1,20 +1,18 @@
 
 
 
-[ ] add 2 step button component for deleting own user projects
+[x] add 2 step button component for deleting own user projects
 
-[ ] add 'count me in' button to send email
+[x] add 'count me in' button to send email
 
-[ ] change state span for toggle button [idea, in progress, need review]
+[x] change state span for toggle button [idea, in progress, need review]
 
-[ ] create new rask mode
+[ ] create new project mode
 
 [ ] craete backend + db
 
 [ ] add filters
 
-[ ] change like buttons
-
-[ ] dim with sidebar and put two btn for display list or pads
+[x] change like buttons
 
 [ ] add heads of people working on the project next to 'count me in' button

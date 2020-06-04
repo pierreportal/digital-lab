@@ -1,36 +1,19 @@
 import React from "react";
 import LikeButton from "./LikeButton";
 import InterestButton from "./InterestButton";
+import DeleteStepButton from "./DeleteStepButton";
+import StateProjectButton from "./StateProjectButton";
+import CountMeInButton from "./CountMeInButton";
+import InvolvedFriends from "./InvolvedFriends";
 
 export default function ProjectListItem(props) {
   const { project, user } = props;
-
-  //   const categories = project.category.map((category) => (
-  //     <span key={category}>{category}</span>
-  //   ));
 
   const tags = project.tags.map((tag) => (
     <span className="tag-span" key={tag}>
       #{tag}
     </span>
   ));
-
-  const projectState = () => {
-    const colorMap = {
-      wip: ["#feceab", "#ff847c"],
-      idea: ["#abf0e9", "#63b7af"],
-    };
-    return (
-      <span
-        style={{
-          backgroundColor: colorMap[project.state][0],
-          color: colorMap[project.state][1],
-        }}
-      >
-        {project.state}
-      </span>
-    );
-  };
 
   const description =
     project.description.length > 100
@@ -48,17 +31,33 @@ export default function ProjectListItem(props) {
         </div>
         <div className="row center-line-align">
           <h3>{project.title}</h3>
-          {projectState()}
+          {/* {projectState()} */}
+          <StateProjectButton state={project.state} />
           {/* {categories} */}
         </div>
       </div>
 
       <div className="project-list-item-inner column">
-        <p>{description}</p>
+        <p contentEditable={user.name === project.author}>{description}</p>
         <div className="row">{tags}</div>
         <div className="row">
-          <LikeButton likes={project.likes} />
-          <InterestButton interests={project.interests} />
+          <LikeButton
+            ownByUser={user.name === project.author}
+            likes={project.likes}
+          />
+          <InterestButton
+            ownByUser={user.name === project.author}
+            interests={project.interests}
+          />
+          {user.name !== project.author && (
+            <CountMeInButton project={project} user={user} />
+          )}
+
+          {!!project.involved.length && (
+            <InvolvedFriends involved={project.involved} user={user} />
+          )}
+
+          {user.name === project.author && <DeleteStepButton />}
         </div>
       </div>
     </div>

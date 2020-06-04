@@ -11,7 +11,8 @@
       "tags": ["music", "movie"],
       "author": "Alice",
       "likes": 12,
-      "interests": 6
+      "interests": 6,
+      "involved": ["Alice"]
     },
     {
       "title": "Feminist chat bot",
@@ -21,7 +22,8 @@
       "tags": ["chatbot", "ai", "feminism"],
       "author": "Pierre",
       "likes": 6,
-      "interests": 10
+      "interests": 10,
+      "involved": ["Pierre", "Alice"]
     },
     {
       "title": "Music movie for Ukle",
@@ -31,7 +33,8 @@
       "tags": ["music", "movie"],
       "author": "Alice",
       "likes": 12,
-      "interests": 6
+      "interests": 6,
+      "involved": ["Alice"]
     },
     {
       "title": "Feminist chat bot",
@@ -41,7 +44,8 @@
       "tags": ["chatbot", "ai", "feminism"],
       "author": "Pierre",
       "likes": 6,
-      "interests": 10
+      "interests": 10,
+      "involved": []
     },
     {
       "title": "Music movie for Ukle",
@@ -51,7 +55,8 @@
       "tags": ["music", "movie"],
       "author": "Alice",
       "likes": 12,
-      "interests": 6
+      "interests": 6,
+      "involved": ["Alice"]
     },
     {
       "title": "Feminist chat bot",
@@ -61,7 +66,8 @@
       "tags": ["chatbot", "ai", "feminism"],
       "author": "Pierre",
       "likes": 6,
-      "interests": 10
+      "interests": 10,
+      "involved": ["Alice"]
     },
     {
       "title": "Music movie for Ukle",
@@ -71,7 +77,8 @@
       "tags": ["music", "movie"],
       "author": "Alice",
       "likes": 12,
-      "interests": 6
+      "interests": 6,
+      "involved": ["Pierre"]
     },
     {
       "title": "Feminist chat bot",
@@ -81,7 +88,8 @@
       "tags": ["chatbot", "ai", "feminism"],
       "author": "Pierre",
       "likes": 6,
-      "interests": 10
+      "interests": 10,
+      "involved": ["Pierre"]
     },
     {
       "title": "Music movie for Ukle",
@@ -91,7 +99,8 @@
       "tags": ["music", "movie"],
       "author": "Alice",
       "likes": 12,
-      "interests": 6
+      "interests": 6,
+      "involved": ["Alice"]
     },
     {
       "title": "Feminist chat bot",
@@ -101,7 +110,8 @@
       "tags": ["chatbot", "ai", "feminism"],
       "author": "Pierre",
       "likes": 6,
-      "interests": 10
+      "interests": 10,
+      "involved": ["Alice"]
     },
     {
       "title": "Music movie for Ukle",
@@ -111,7 +121,8 @@
       "tags": ["music", "movie"],
       "author": "Alice",
       "likes": 12,
-      "interests": 6
+      "interests": 6,
+      "involved": ["Alice"]
     },
     {
       "title": "Feminist chat bot",
@@ -121,7 +132,8 @@
       "tags": ["chatbot", "ai", "feminism"],
       "author": "Pierre",
       "likes": 6,
-      "interests": 10
+      "interests": 10,
+      "involved": []
     }
   ]
 }

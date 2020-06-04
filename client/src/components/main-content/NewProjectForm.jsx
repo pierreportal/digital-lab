@@ -9,8 +9,13 @@ export default function NewProjectForm() {
   //     <span key={category}>{category}</span>
   //   ));
 
-  const tags = [1, 2, 3, 4].map((tag) => (
-    <span contentEditable={true} className="tag-span" key={tag}>
+  const tags = ["collab", "project"].map((tag) => (
+    <span
+      spellCheck={false}
+      contentEditable={true}
+      className="tag-span"
+      key={tag}
+    >
       #{tag}
     </span>
   ));
@@ -35,25 +40,27 @@ export default function NewProjectForm() {
   const description = " project short description";
 
   return (
-    <div className="project-list-item column new-project-template">
-      <div className=" row center-line-align">
-        <div className="row center-line-align">
-          <div className="project-list-item-author-pic"></div>
-          <span className="project-list-author-name">me</span>
+    <div className=" new-project-form-container column">
+      <div className="project-list-item column new-project-template">
+        <div className=" row center-line-align">
+          <div className="row center-line-align">
+            <div className="project-list-item-author-pic"></div>
+            <span className="project-list-author-name">me</span>
+          </div>
+          <div className="row center-line-align">
+            <h3 contentEditable={true}>New Project</h3>
+            {projectState()}
+            {/* {categories} */}
+          </div>
         </div>
-        <div className="row center-line-align">
-          <h3 contentEditable={true}>Title</h3>
-          {projectState()}
-          {/* {categories} */}
+
+        <div className="project-list-item-inner column">
+          <p contentEditable={true}>{description}</p>
+          <div className="row">{tags}</div>
         </div>
       </div>
-
-      <div className="project-list-item-inner column">
-        <p contentEditable={true}>{description}</p>
-        <div className="row">{tags}</div>
-        <div className="row center-content">
-          <button className="new-project-template-add-btn">+</button>
-        </div>
+      <div className="row center-content">
+        <button className="new-project-template-add-btn">+</button>
       </div>
     </div>
   );

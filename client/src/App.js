@@ -8,7 +8,7 @@ import MainContent from "./components/MainContent";
 function App(props) {
   return (
     <div className="App">
-      <HeadMenu />
+      <HeadMenu user={props.user} />
       <div className="main-container row">
         <SideBar />
         <MainContent user={props.user} />
