@@ -12,7 +12,8 @@
       "author": "Alice",
       "likes": 12,
       "interests": 6,
-      "involved": ["Alice"]
+      "involved": ["Alice"],
+      "spaceId": "hefjksdjhks"
     },
     {
       "title": "Feminist chat bot",
@@ -23,7 +24,32 @@
       "author": "Pierre",
       "likes": 6,
       "interests": 10,
-      "involved": ["Pierre", "Alice"]
+      "involved": ["Pierre", "Alice"],
+      "spaceId": "hefjksdjhks"
+    },
+    {
+      "title": "Music movie for Ukle",
+      "description": "I am realizing the movie for Ukle and need help :)",
+      "category": ["movie", "theatre"],
+      "state": "review",
+      "tags": ["music", "movie"],
+      "author": "Alice",
+      "likes": 12,
+      "interests": 6,
+      "involved": ["Alice"],
+      "spaceId": "hefjksdjhks"
+    },
+    {
+      "title": "Feminist chat bot",
+      "description": "Just an idea for this one, As art project I would like tio create a chat bot that is not biased. I mostly need help for data collecting...",
+      "category": ["AI", "programming", "social"],
+      "state": "idea",
+      "tags": ["chatbot", "ai", "feminism"],
+      "author": "Pierre",
+      "likes": 6,
+      "interests": 10,
+      "involved": [],
+      "spaceId": "hefjksdjhks"
     },
     {
       "title": "Music movie for Ukle",
@@ -34,18 +60,20 @@
       "author": "Alice",
       "likes": 12,
       "interests": 6,
-      "involved": ["Alice"]
+      "involved": ["Alice"],
+      "spaceId": "hefjksdjhks"
     },
     {
       "title": "Feminist chat bot",
       "description": "Just an idea for this one, As art project I would like tio create a chat bot that is not biased. I mostly need help for data collecting...",
       "category": ["AI", "programming", "social"],
-      "state": "idea",
+      "state": "review",
       "tags": ["chatbot", "ai", "feminism"],
       "author": "Pierre",
       "likes": 6,
       "interests": 10,
-      "involved": []
+      "involved": ["Alice"],
+      "spaceId": "hefjksdjhks"
     },
     {
       "title": "Music movie for Ukle",
@@ -56,7 +84,8 @@
       "author": "Alice",
       "likes": 12,
       "interests": 6,
-      "involved": ["Alice"]
+      "involved": ["Pierre", "Alice", "Zilo", "Blas"],
+      "spaceId": "hefjksdjhks"
     },
     {
       "title": "Feminist chat bot",
@@ -67,7 +96,8 @@
       "author": "Pierre",
       "likes": 6,
       "interests": 10,
-      "involved": ["Alice"]
+      "involved": ["Pierre"],
+      "spaceId": "hefjksdjhks"
     },
     {
       "title": "Music movie for Ukle",
@@ -78,7 +108,8 @@
       "author": "Alice",
       "likes": 12,
       "interests": 6,
-      "involved": ["Pierre"]
+      "involved": ["Alice"],
+      "spaceId": "hefjksdjhks"
     },
     {
       "title": "Feminist chat bot",
@@ -89,7 +120,8 @@
       "author": "Pierre",
       "likes": 6,
       "interests": 10,
-      "involved": ["Pierre"]
+      "involved": ["Alice"],
+      "spaceId": "hefjksdjhks"
     },
     {
       "title": "Music movie for Ukle",
@@ -100,7 +132,8 @@
       "author": "Alice",
       "likes": 12,
       "interests": 6,
-      "involved": ["Alice"]
+      "involved": ["Alice"],
+      "spaceId": "hefjksdjhks"
     },
     {
       "title": "Feminist chat bot",
@@ -111,29 +144,8 @@
       "author": "Pierre",
       "likes": 6,
       "interests": 10,
-      "involved": ["Alice"]
-    },
-    {
-      "title": "Music movie for Ukle",
-      "description": "I am realizing the movie for Ukle and need help :)",
-      "category": ["movie", "theatre"],
-      "state": "wip",
-      "tags": ["music", "movie"],
-      "author": "Alice",
-      "likes": 12,
-      "interests": 6,
-      "involved": ["Alice"]
-    },
-    {
-      "title": "Feminist chat bot",
-      "description": "Just an idea for this one, As art project I would like tio create a chat bot that is not biased. I mostly need help for data collecting...",
-      "category": ["AI", "programming", "social"],
-      "state": "idea",
-      "tags": ["chatbot", "ai", "feminism"],
-      "author": "Pierre",
-      "likes": 6,
-      "interests": 10,
-      "involved": []
+      "involved": [],
+      "spaceId": "hefjksdjhks"
     }
   ]
 }

@@ -1,11 +1,16 @@
 import React, { useState } from "react";
+import { updateProject } from "../../api/apicalls";
 
 export default function InterestButton(props) {
-  const { interests, ownByUser } = props;
-  const [counters, setcounters] = useState(interests);
+  const { project, ownByUser, actualise } = props;
+  const [counters, setcounters] = useState(project.interests);
+
   const handleClick = () => {
     if (ownByUser) return;
-    setcounters(counters + 1);
+    const newAmount = counters + 1;
+    setcounters(newAmount);
+    updateProject(project._id, { interests: newAmount });
+    actualise();
   };
 
   return (

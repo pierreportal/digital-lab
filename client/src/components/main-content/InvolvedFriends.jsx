@@ -5,7 +5,7 @@ export default function InvolvedFriends(props) {
   const heads = involved.map((friend, i) => {
     return (
       <div key={i} className="propject-involved-head">
-        {friend[0]}
+        {friend.username[0].toUpperCase()}
       </div>
     );
   });

@@ -1,18 +1,15 @@
 import React from "react";
 import "./App.css";
 import HeadMenu from "./components/HeadMenu";
-import SideBar from "./components/SideBar";
 import Footer from "./components/Footer";
-import MainContent from "./components/MainContent";
+import Routing from "./components/Routing";
 
 function App(props) {
+  console.log(props);
   return (
     <div className="App">
       <HeadMenu user={props.user} />
-      <div className="main-container row">
-        <SideBar />
-        <MainContent user={props.user} />
-      </div>
+      <Routing user={props.user} />
       <Footer />
     </div>
   );

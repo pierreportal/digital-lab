@@ -1,11 +1,16 @@
 import React, { useState } from "react";
+import { updateProject } from "../../api/apicalls";
 
 export default function LikeButton(props) {
-  const { likes, ownByUser } = props;
-  const [counters, setcounters] = useState(likes);
-  const handleClick = () => {
+  const { project, ownByUser, actualise } = props;
+  const [counters, setcounters] = useState(project.likes);
+
+  const handleClick = (props) => {
     if (ownByUser) return;
-    setcounters(counters + 1);
+    const newAmount = counters + 1;
+    setcounters(newAmount);
+    updateProject(project._id, { likes: newAmount });
+    actualise();
   };
 
   return (
@@ -13,13 +18,13 @@ export default function LikeButton(props) {
       {!ownByUser ? (
         <>
           <button className="project-like-button" onClick={handleClick}>
-            ❤️ {counters}
+            ❤️ <span className="like-btn-counter">{counters}</span>
           </button>
         </>
       ) : (
         <>
           <div className="project-like-button" onClick={handleClick}>
-            ❤️ {counters}
+            ❤️ <span className="like-btn-counter">{counters}</span>
           </div>
         </>
       )}
